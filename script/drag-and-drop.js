@@ -134,7 +134,11 @@ function createToDo() {
     importantToggle.addEventListener("click", function() {
         const parentStatus = this.closest(".status");
         parentStatus.querySelector(".to-do-items").prepend(todoDiv);
-        todoDiv.style.fontSize = "calc(var(--font-size) * 1.5)";
+
+        // styling the function after "clicked" action //
+        todoDiv.style.outline = "2px solid var(--primary-color)";
+        todoDiv.style.outlineOffset = "2px solid var(--primary-color)";
+        todoDiv.style.transition = "outline 0.25s ease-in-out";
     });
 
     todoDiv.appendChild(importantToggle);
