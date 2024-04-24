@@ -1,0 +1,164 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>You "Kan" Do It!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="assets/style.css" rel="stylesheet">
+        <link href="assets/style_to-do.css" rel="stylesheet">
+        <link href="assets/style_action.css" rel="stylesheet">
+        <link href="assets/style_motivational-buddy.css" rel="stylesheet">
+        <link href="assets/reset.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- BACKGROUND GRID -->
+        <img src="assets/images/grid.svg" alt="grid background" class="grid-background">
+
+        <!-- MOTIVATIONAL BUDDY (I have to kill it) -->
+        <!-- <div class="motivational-buddy" id="moving-buddy">
+            <img src="assets/images/cat.svg" alt="pixelated cat" class="pixel-cat">
+            <div class="pixelated-speech-bubble_container">
+                <img src="assets/images/speech-bubble.svg" alt="pixelated speech bubble" class="pixelated-speech-bubble">
+                <div class="motivational-buddy_quotes">
+                    <p id="motivational-quotes"></p>
+                 </div>
+            </div>
+        </div> -->
+        
+
+
+        <!-- CONFETTI! -->
+        <!-- <button class="confetti-button" id="confettiButton">You Did It!</button>
+        <canvas id="confetti"></canvas> -->
+
+
+
+        <!-- CHATGPT (next steps) -->
+        <!-- <div class="left-column">
+            <h1>AI Goal Setter</h1>
+            <form id="chat-form">
+                <label for="mytext">Enter your message:</label>
+                <input type="text" id="mytext" style="width: 50%;" required>
+                <button type="submit">Submit</button>
+            </form>
+            
+            <div>
+                <h2>Response:</h2>
+                <textarea id="response" rows="20" style="width: 80%;" readonly></textarea>
+            </div>
+        </div> -->
+
+
+        <!-- TO-DO -->
+        <div class="to-do_function">
+            <div class="action_container">
+                <h1><mark>You "Kan" Do It!</mark></h1>
+                <div class="action_item">
+                    <p class="close_post-it">&times;</p>
+                    <p>Get started by adding things you need to do! :)</p>
+                </div>
+                <div class="popup" id="popup">
+                    <div class="popup_header">
+                        <h2>Add To-Do Item</h2>
+                        <!-- <button class="popup_close-button close_popup" id="close-pop-up">&times;</button> -->
+                    </div>
+                    
+                    <div class="popup_content">
+                        <input type="text" id="to-do_input">
+                        <input type="submit" value="Submit" id="todo_submit">
+                    </div>
+                </div>
+            </div>
+
+            <div class="to-do_container">
+                <div class="status not-started">
+                    <header>
+                        <h2>Not Started</h2>
+                    </header>
+
+                    <div class="to-do-items" id="no_status">
+                        <!-- <button id="add-button" data-target-popup="#popup">
+                            <h2>+ Add Task</h2>
+                        </button> -->
+
+                        <!-- <div class="todos" draggable="true">
+                            <div class="toggle-button todos-mobile">
+                                <button class="up-arrow">&#8963;</button>
+                                <button class="down-arrow">&#8963;</button>
+                            </div>
+
+                            <div class="todos_content">
+                                <p>Get started by adding your first to-do item :)</p>
+
+                                <div class="todos_content-toggles">
+                                    <p class="important-toggle">!</p>
+                                    <p class="close-toggle">&times;</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+    
+                <!-- <div class="status not-started">
+                    <header>
+                        <h2>Not Started</h2>
+                    </header>
+
+                    <div class="to-do-items">
+                        <div class="todos" draggable="true">
+                            <div class="toggle-button todos-mobile">
+                                <button class="up-arrow">&#8963;</button>
+                                <button class="down-arrow">&#8963;</button>
+                            </div>
+
+                            <div class="todos_content">
+                                <p>Work on the Typography and Interaction homework :0</p>
+
+                                <div class="todos_content-toggles">
+                                    <p class="important-toggle">!</p>
+                                    <p class="close-toggle">&times;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+    
+                <div class="status in-progress">
+                    <header>
+                        <h2>In-Progress</h2>
+                    </header>
+
+                    <div class="to-do-items"></div>
+                </div>
+    
+                <div class="status completed" id="celebrationTime">
+                    <header>
+                        <h2>Completed</h2>
+                    </header>
+
+                    <div class="to-do-items"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- JAVASCRIPT LINKINGS -->
+
+        <!-- TO-DO FUNCTION -->
+        <script src="script/drag-and-drop.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+        <script src="script/celebration.js"></script>
+
+        <!-- MOTIVATIONAL BUDDY -->
+        <script src="script/motivational-buddy.js"></script>
+
+
+        <!-- CHATGPT -->
+        <!-- <script src="openai.js"></script> -->
+        <!-- <script src="openai-test.js"></script> -->
+    </body>
+</html>
