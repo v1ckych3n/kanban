@@ -23,8 +23,9 @@
     --not-started_status-color_text: #da4c4c;
     --in-progress_status-color: #85aeff;
     --completed_status-color: #0BD7B2;
-    --completed_status-color_text: #00c4a0;
+    --completed_status-color_text: #00b190;
     --highlighter-color: #FFFAA0;
+    --important-color: #fff351;
     --delete-color: #FF6171;
     --delete-color-background: rgba(255, 97, 113, .15);
 
@@ -33,6 +34,8 @@
     --white-color: #FFFFFF;
     --light-grey: #F0F0F0;
     --grey: #d1d1d1;
+
+    --dragOver-overlay: rgba(0, 0, 0, 0.1);
 
     /* decorative styles */
     --outline: 1px solid var(--primary-color);

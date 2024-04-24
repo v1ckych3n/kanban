@@ -40,13 +40,15 @@ function dragOver(e) {
 }
 
 function dragEnter() {
-    this.style.backgroundColor = "var(--light-grey)";
+    this.style.backgroundColor = "var(--dragOver-overlay)";
+    this.style.transition = 'background-color 0.25s ease-in-out';
     
     console.log("dragEnter");
 }
 
 function dragLeave() {
     this.style.backgroundColor = "transparent";
+    this.style.transition = 'background-color 0.25s ease-in-out';
 
     console.log("dragLeave");
 }
@@ -54,7 +56,7 @@ function dragLeave() {
 function dragDrop() {
     this.appendChild(dragTodo);
     this.style.backgroundColor = "transparent";
-
+    this.style.transition = 'background-color 0.25s ease-in-out';
     console.log("dragDrop");
 }
 
@@ -132,7 +134,7 @@ function createToDo() {
     importantToggle.addEventListener("click", function() {
         const parentStatus = this.closest(".status");
         parentStatus.querySelector(".to-do-items").prepend(todoDiv);
-        todoDiv.style.backgroundColor = "#FFD24B";
+        todoDiv.style.fontSize = "calc(var(--font-size) * 1.5)";
     });
 
     todoDiv.appendChild(importantToggle);

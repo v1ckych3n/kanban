@@ -37,9 +37,7 @@
 }
 
 .second {
-    transform: rotate(10deg);
-    position: relative;
-    top: 2rem;
+    display: none
 }
 
 .post-it_cat {
@@ -66,7 +64,12 @@
 /* TABLET MEDIA QUERY */
 /* TABLET MEDIA QUERY */
 @media (min-width: 768px) {
-   
+    .second {
+        display: block;
+        transform: rotate(10deg);
+        position: relative;
+        top: 2rem;
+    }
 }
 
 

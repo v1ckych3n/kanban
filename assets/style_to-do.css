@@ -210,10 +210,12 @@
 
 .to-do_container > #celebrationTime.status.completed > .todos {
     color: var(--completed_status-color_text);
+    text-decoration: line-through;
 }
 
-strike {
-    background-color: black;
+.to-do_container > #celebrationTime.status.completed > .to-do-items > .todos {
+    color: var(--completed_status-color_text);
+    text-decoration: line-through;
 }
 
 
@@ -272,7 +274,7 @@ strike {
 
     .todos {
         cursor: pointer;
-        padding: var(--gap);
+        padding: calc(var(--gap) * 1.5);
 
         display: flex; 
         flex-direction: row;
@@ -304,8 +306,8 @@ strike {
     .important-toggle:hover {
         transition: var(--hover-effect);
         color: var(--primary-color);
-        background-color: var(--highlighter-color);
-        outline: var(--highlighter-color) 1px solid;
+        background-color: var(--important-color);
+        outline: var(--important-color) 1px solid;
     }
 
     .close-toggle:hover {
