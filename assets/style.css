@@ -1,7 +1,7 @@
 /* TYPEFACE */
 @font-face {
     font-family: Mateur;
-    src: url(/fonts/Mateur.ttf);
+    src: url('/fonts/Mateur.ttf');
     weight: 400;
 }
 
