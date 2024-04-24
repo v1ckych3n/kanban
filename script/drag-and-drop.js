@@ -136,9 +136,17 @@ function createToDo() {
         parentStatus.querySelector(".to-do-items").prepend(todoDiv);
 
         // styling the function after "clicked" action //
-        todoDiv.style.outline = "2px solid var(--primary-color)";
-        todoDiv.style.outlineOffset = "-2px";
-        todoDiv.style.zIndex = "100";
+        // WHEN CLICKED //
+        if (!this.isImportant) {
+            todoDiv.style.backgroundColor = "var(--highlighter-color)"
+            this.isImportant = true;
+        } 
+        
+        // WHEN CLICKED AGAIN!!! (go back to original state) //
+        else {
+            todoDiv.style.backgroundColor = "var(--highlighter-color)"
+            this.isImportant = false;
+        }
     });
 
     todoDiv.appendChild(importantToggle);

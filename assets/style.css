@@ -25,6 +25,7 @@
     --completed_status-color: #0BD7B2;
     --completed_status-color_text: #00b190;
     --highlighter-color: #FFFAA0;
+    --important-color_background: rgba(255, 250, 160, .5);
     --important-color: #fff351;
     --delete-color: #FF6171;
     --delete-color-background: rgba(255, 97, 113, .15);
