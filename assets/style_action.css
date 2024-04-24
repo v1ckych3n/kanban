@@ -9,10 +9,22 @@
     align-content: center;
 }
 
+.post-its {
+    display: flex;
+    flex-direction: row;
+}
+
 .action_item {
     background-color: var(--background-color);
     outline: var(--outline);
     transform: rotate(-10deg);
+}
+
+.second {
+    transform: rotate(10deg);
+    position: relative;
+    top: 2rem;
+   
 }
 
 .action_item > p:first-child {
@@ -24,10 +36,10 @@
 }
 
 .action_item > p:nth-child(2) {
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
     
-    padding: calc(var(--gap) * 5);
+    padding: calc(var(--gap) * 3);
     display: flex;
     flex-direction: column;
     row-gap: var(--gap);
@@ -41,8 +53,6 @@
     font-size: calc(var(--font-size) * 1.5);
     line-height: var(--line-height);
 }
-
-
 
 
 
