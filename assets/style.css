@@ -15,8 +15,8 @@
     /* color styles */
     --not-started_status-color: #ff9696;
     --in-progress_status-color: #85aeff;
-    --completed_status-color: #0bd7b2;
-    --highlighter-color: #FFD24B;
+    --completed_status-color: #0BD7B2;
+    --highlighter-color: #FFFAA0;
     --delete-color: #FF6171;
 
     --primary-color: #0039A6;

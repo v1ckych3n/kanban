@@ -15,7 +15,7 @@
 }
 
 .action_item {
-    background-color: var(--background-color);
+    background-color: var(--highlighter-color);
     outline: var(--outline);
     transform: rotate(-10deg);
 
