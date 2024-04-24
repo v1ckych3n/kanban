@@ -1,0 +1,104 @@
+/* TYPEFACE */
+@font-face {
+    font-family: Mateur;
+    src: url(/fonts/Mateur.ttf);
+    weight: 400;
+}
+
+:root {
+    /* type styles */
+    --primary-font: Mateur;
+    --heading-font: Mateur;
+    --font-size: 14px;
+    --line-height: 120%;
+
+    /* color styles */
+    --not-started_status-color: #ff9696;
+    --in-progress_status-color: #85aeff;
+    --completed_status-color: #0bd7b2;
+    --highlighter-color: #FFD24B;
+    --delete-color: #FF6171;
+
+    --primary-color: #0039A6;
+    --background-color: #FEFDE7;
+    --white-color: #FFFFFF;
+    --light-grey: #f0f0f0;
+
+    /* decorative styles */
+    --outline: 1px solid var(--primary-color);
+    --gap: 10px;
+    --gap_todo-column: .5rem;
+    --blend: multiply;
+
+    /* animation styles */
+    --hover-effect: ease-in-out 250ms;
+}
+
+body {
+    background-color: var(--background-color);
+    font-size: var(--font-size);
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: calc(var(--font-size) * 2.5);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: calc(var(--font-size) * 1.75);
+}
+
+.grid-background {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    object-fit: cover;
+}
+
+/* .confetti-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+    outline: var(--outline);
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: var(--gap);
+    cursor: pointer;
+} */
+
+
+
+
+
+/* TABLET MEDIA QUERY */
+/* TABLET MEDIA QUERY */
+/* TABLET MEDIA QUERY */
+@media (min-width: 768px) {
+
+}
+
+
+
+
+
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+@media (min-width: 1280px) {
+    h1 {
+        font-size: calc(var(--font-size) * 3.75);
+    }
+}

@@ -1,0 +1,298 @@
+#add-button {
+    padding: var(--gap);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    outline: var(--outline);
+}
+
+.to-do_function {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(var(--gap) * 3);
+    align-items: center;
+    padding: calc(var(--gap) * 2);
+}
+
+.to-do_container {
+    padding: var(--gap);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap);
+    outline: var(--outline);
+}
+
+.status {
+    width: 100%;
+    height: 100%;
+    outline: var(--outline);
+}
+
+.status > header {
+    padding: var(--gap);
+    color: var(--black-color);
+    overflow: hidden;
+
+    display: flex; 
+    flex-direction: column;
+    row-gap: var(--gap_todo-column);
+}
+
+.no-status > header {
+    background-color: var(--no-status_status-color);
+    mix-blend-mode: var(--blend);
+    border-bottom: var(--outline);
+}
+
+.not-started > header {
+    background-color: var(--not-started_status-color);
+    mix-blend-mode: var(--blend);
+    border-bottom: var(--outline);
+}
+
+.in-progress > header {
+    background-color: var(--in-progress_status-color);
+    mix-blend-mode: var(--blend);
+    border-bottom: var(--outline);
+}
+
+.completed > header {
+    background-color: var(--completed_status-color);
+    mix-blend-mode: var(--blend);
+    border-bottom: var(--outline);
+}
+
+.todos {
+    background-color: #ffffff;
+    position: relative;
+    padding: var(--gap);
+    
+    display: flex;
+    flex-direction: row;
+    column-gap: var(--gap);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    outline: var(--outline);
+}
+
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    column-gap: var(--gap);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: calc(var(--font-size) * 1.5);
+    padding: calc(var(--gap) * .5);
+}
+
+.up-arrow {
+    border-bottom: 1px white solid;
+}
+
+.down-arrow {
+    rotate: 180deg;
+}
+
+.todos_content {
+    width: 100%;
+    padding: var(--gap);
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: var(--gap);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todos_content-toggles {
+    display: flex;
+    flex-direction: row;
+    column-gap: calc(var(--gap) * .5);
+}
+
+.close-toggle, .important-toggle {
+    outline: var(--outline);
+    border-radius: 100rem;
+    padding: 1%;
+    min-width: 15px;
+    height: 15px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* Add To-Do Popup styles */
+.popup {
+    width: 100%;
+    height: auto;
+    
+    transition: 0.3s ease-in-out;
+    outline: var(--outline);
+}
+
+.popup_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--gap);
+
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.popup_content {
+    padding: var(--gap);
+}
+
+.popup_close-button {
+    font-size: calc(var(--font-size) * 1.5);
+}
+
+.close-popup {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+#to-do_input {
+    outline: var(--outline);
+    border-bottom: none;
+    padding: calc(var(--gap) * .75);
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+#todo_submit {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 100%;
+    padding: var(--gap);
+    outline: var(--outline);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+
+/* TABLET MEDIA QUERY */
+/* TABLET MEDIA QUERY */
+/* TABLET MEDIA QUERY */
+@media (min-width: 768px) {
+    .to-do_container {
+        width: 40rem;
+    }
+
+    .popup {
+        width: 40rem;
+    }
+}
+
+
+
+
+
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+@media (min-width: 1280px) {
+    #add-button:hover {
+        background-color: var(--black-color);
+        color: var(--white-color);
+        transition: var(--hover-effect);
+        cursor: pointer;
+    }
+
+    .to-do_function {
+        height: 100vh;
+        
+        flex-direction: row;
+        column-gap: calc(var(--gap) * 3);
+        justify-content: center;
+        padding: calc(var(--gap) * 5);
+    }
+    
+    .to-do_container {
+        display: flex;
+        flex-direction: row;
+        column-gap: var(--gap);
+        justify-content: space-between;
+        
+        width: 100%;
+        height: 80vh;
+    }
+    
+    .status_no-status, .status_not-started, .status_in-progress, .status_completed {
+        width: 25%;
+        
+    }
+
+    .todos {
+        cursor: pointer;
+        padding: var(--gap);
+
+        display: flex; 
+        flex-direction: row;
+        column-gap: var(--gap);
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        outline: var(--outline);
+
+        position: relative;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .todos_content {
+        padding: 0;
+    }
+
+    .todos-mobile {
+        display: none;
+    }
+
+    .close-toggle, .important-toggle {
+        cursor: pointer;
+    }
+
+    .important-toggle:hover {
+        transition: var(--hover-effect);
+    }
+
+    .close-toggle:hover {
+        background-color: var(--black-color);
+        color: var(--white-color);
+        transition: var(--hover-effect);
+    }
+
+    #todo_submit {
+        cursor: pointer;
+    }
+
+    .popup {
+        width: 30rem;
+    }
+
+    .popup_close-button:hover {
+        cursor: pointer;
+    }
+}

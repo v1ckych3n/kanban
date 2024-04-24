@@ -1,0 +1,96 @@
+#moving-buddy {
+    display: none;
+}
+
+
+
+
+
+/* TABLET MEDIA QUERY */
+/* TABLET MEDIA QUERY */
+/* TABLET MEDIA QUERY */
+@media (min-width: 768px) {
+    #moving-buddy {
+        /* display: none; */
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    
+    #moving-buddy-handle {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .motivational-buddy {
+        position: relative;
+    }
+    
+    .pixel-cat {
+        width: 100px;
+        height: auto;
+    
+        position: fixed;
+        bottom: 3rem;
+        left: 3rem;
+        z-index: 1000;
+    
+        animation: glitch infinite 1s;
+    }
+    
+    @keyframes glitch {
+        0% {
+            margin-bottom: 0;
+        }
+    
+        50% {
+            margin-bottom: 5px;
+        }
+    
+        100% {
+            margin-bottom: 0;
+        }
+    }
+    
+    .pixelated-speech-bubble_container {
+        position: relative;
+    }
+    
+    .pixelated-speech-bubble {
+        width: 200px;
+        height: auto;
+        
+        position: fixed;
+        bottom: 10rem;
+        left: 4rem;
+        z-index: 1000;
+    }
+    
+    .motivational-buddy_quotes {
+        font-family: var(--motivational-buddy_font);
+        font-weight: 500;
+    
+        width: 150px;
+        height: auto;
+    
+        position: fixed;
+        z-index: 1001;
+    
+        bottom: 14rem;
+        left: 6.5rem;
+        
+        list-style-type: none;
+    }
+}
+
+
+
+
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+@media (min-width: 1280px) {
+    
+}
