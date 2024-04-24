@@ -138,13 +138,15 @@ function createToDo() {
         // styling the function after "clicked" action //
         // WHEN CLICKED //
         if (!this.isImportant) {
-            todoDiv.style.backgroundColor = "var(--highlighter-color)"
+            todoDiv.style.backgroundColor = "var(--important-color_background)"
+            todoDiv.style.filter = "multiply(100%)";
             this.isImportant = true;
         } 
         
         // WHEN CLICKED AGAIN!!! (go back to original state) //
         else {
-            todoDiv.style.backgroundColor = "var(--highlighter-color)"
+            todoDiv.style.backgroundColor = "";
+            todoDiv.style.filter = "";
             this.isImportant = false;
         }
     });
