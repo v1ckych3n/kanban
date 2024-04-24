@@ -185,7 +185,7 @@
 #to-do_input {
     outline: var(--outline);
     border-bottom: none;
-    padding: calc(var(--gap) * .75);
+    padding: calc(var(--gap) * 1.5);
     width: 100%;
     height: 100%;
     background-color: var(--white-color);
@@ -219,6 +219,16 @@
 }
 
 
+
+/* Up and Down Toggle Button */
+#no_status.to-do-items > .todos > .toggle-button.todos-mobile {
+    background-color: var(--not-started_status-color_text);
+}
+
+#celebrationTime.status.completed > .to-do-items > .todos > .toggle-button.todos-mobile  {
+    background-color: var(--completed_status-color_text);
+    text-decoration: none;
+}
 
 /* TABLET MEDIA QUERY */
 /* TABLET MEDIA QUERY */

@@ -137,8 +137,8 @@ function createToDo() {
 
         // styling the function after "clicked" action //
         todoDiv.style.outline = "2px solid var(--primary-color)";
-        todoDiv.style.outlineOffset = "2px solid var(--primary-color)";
-        todoDiv.style.transition = "outline 0.25s ease-in-out";
+        todoDiv.style.outlineOffset = "-2px";
+        todoDiv.style.zIndex = "100";
     });
 
     todoDiv.appendChild(importantToggle);
