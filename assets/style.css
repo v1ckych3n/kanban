@@ -20,6 +20,7 @@
 
     /* color styles */
     --not-started_status-color: #ff9696;
+    --not-started_status-color_text: #da4c4c;
     --in-progress_status-color: #85aeff;
     --completed_status-color: #0BD7B2;
     --highlighter-color: #FFFAA0;

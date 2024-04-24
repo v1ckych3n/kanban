@@ -201,6 +201,10 @@
     text-align: center;
 }
 
+.to-do_container > .status.not-started > #no_status.to-do-items > .todos {
+    color: var(--not-started_status-color_text);
+}
+
 
 
 /* TABLET MEDIA QUERY */
