@@ -12,6 +12,7 @@
 .post-its {
     display: flex;
     flex-direction: row;
+    font-family: var(--heading-font);
 }
 
 .action_item {

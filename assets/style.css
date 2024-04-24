@@ -5,9 +5,15 @@
     weight: 400;
 }
 
+@font-face {
+    font-family: Monaspace Neon;
+    src: url(../fonts/MonaspaceNeonVarVF[wght\,wdth\,slnt].ttf);
+    font-weight: 300;
+}
+
 :root {
     /* type styles */
-    --primary-font: Mateur;
+    --primary-font: Monaspace Neon;
     --heading-font: Mateur;
     --font-size: 14px;
     --line-height: 120%;
@@ -43,6 +49,7 @@ body {
 
 h1 {
     font-size: calc(var(--font-size) * 2.5);
+    font-family: var(--heading-font);
 }
 
 h2 {
