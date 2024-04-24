@@ -201,8 +201,15 @@
     text-align: center;
 }
 
+
+
+/* Individual Container Color */
 .to-do_container > .status.not-started > #no_status.to-do-items > .todos {
     color: var(--not-started_status-color_text);
+}
+
+.to-do_container > #celebrationTime.status.completed > .todos {
+    color: var(--completed_status-color_text);
 }
 
 

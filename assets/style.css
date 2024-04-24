@@ -23,6 +23,7 @@
     --not-started_status-color_text: #da4c4c;
     --in-progress_status-color: #85aeff;
     --completed_status-color: #0BD7B2;
+    --completed_status-color_text: #00c4a0;
     --highlighter-color: #FFFAA0;
     --delete-color: #FF6171;
     --delete-color-background: rgba(255, 97, 113, .15);
