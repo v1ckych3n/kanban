@@ -108,19 +108,6 @@ function createToDo() {
     todoDiv.classList.add("todos");
     todoDiv.setAttribute("draggable", "true");
 
-
-    // Utilizing the important feature that allows user to list that item as main priority //
-    const importantToggle = document.createElement("p");
-    importantToggle.classList.add("important-toggle");
-    importantToggle.textContent = "!";
-    importantToggle.addEventListener("click", function() {
-        const parentStatus = this.closest(".status");
-        parentStatus.querySelector(".to-do-items").prepend(todoDiv);
-        todoDiv.style.backgroundColor = "#FFD24B";
-    });
-    todoDiv.appendChild(importantToggle);
-
-
     // Recreate the .todos content with the up and down arrows //
     const toggleButtonDiv = document.createElement("div");
     toggleButtonDiv.classList.add("toggle-button", "todos-mobile");
@@ -136,6 +123,19 @@ function createToDo() {
     toggleButtonDiv.appendChild(upArrowButton);
     toggleButtonDiv.appendChild(downArrowButton);
     todoDiv.appendChild(toggleButtonDiv);
+
+
+    // Utilizing the important feature that allows user to list that item as main priority //
+    const importantToggle = document.createElement("p");
+    importantToggle.classList.add("important-toggle");
+    importantToggle.textContent = "!";
+    importantToggle.addEventListener("click", function() {
+        const parentStatus = this.closest(".status");
+        parentStatus.querySelector(".to-do-items").prepend(todoDiv);
+        todoDiv.style.backgroundColor = "#FFD24B";
+    });
+
+    todoDiv.appendChild(importantToggle);
     
 
     

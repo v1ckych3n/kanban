@@ -141,6 +141,12 @@
     outline: var(--delete-color) 1px solid;
 }
 
+.important-toggle {
+    color: var(--primary-color);
+    background-color: var(--light-grey);
+    outline: var(--grey) 1px solid;
+}
+
 /* Add To-Do Popup styles */
 .popup {
     width: 100%;
@@ -281,6 +287,9 @@
 
     .important-toggle:hover {
         transition: var(--hover-effect);
+        color: var(--primary-color);
+        background-color: var(--highlighter-color);
+        outline: var(--highlighter-color) 1px solid;
     }
 
     .close-toggle:hover {

@@ -24,11 +24,13 @@
     --completed_status-color: #0BD7B2;
     --highlighter-color: #FFFAA0;
     --delete-color: #FF6171;
+    --delete-color-background: rgba(255, 97, 113, .15);
 
     --primary-color: #0039A6;
     --background-color: #FEFDE7;
     --white-color: #FFFFFF;
-    --light-grey: #f0f0f0;
+    --light-grey: #F0F0F0;
+    --grey: #d1d1d1;
 
     /* decorative styles */
     --outline: 1px solid var(--primary-color);
